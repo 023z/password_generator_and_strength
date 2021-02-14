@@ -71,7 +71,7 @@ button {
   width: 70%;
   padding: 0.25rem 0.75rem;
   background-color: #dca37f;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   border: 1px solid #cc8328;
   outline: none;
   align-items: center;
@@ -79,9 +79,26 @@ button {
 }
 
 .problems {
+  align-content: center;
+  width: 600px;
+  height: 370px;
+  border-top:1px solid silver;
+  border-left: 1px solid silver;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(7px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
   text-align: center;
-  color: #e0ae8f;
-  margin-top: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 500px;
+  align-self: right;
+  font-family: "Orbitron",sans-serif;
+  font-size: 21px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 8px;
 }
 
 .password-input:focus {

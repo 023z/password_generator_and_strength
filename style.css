@@ -9,9 +9,9 @@
   --background: #e5ffb3;
   --background-accent: #dbf8a3;
   --background-accent-2: #bde66e;
-  --light: #92de34;
+  --light: #000000;
   --dark: #69bc22;
-  --text: #025600;
+  --text: #ffffff;
 }
 .buttons {
   display: flex;
@@ -20,7 +20,7 @@
 }
 body {
   background-color: #ffffff;
-  color: #000000;
+  color: #fafafa;
   text-align: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -41,14 +41,14 @@ button {
   font-weight: 600;
   color: var(--text);
   background-size: 100% 100%;
-  box-shadow: 0 0 0 7px var(--light) inset;
+  box-shadow: 0 0 0 1px var(--text) inset;
   margin-bottom: 15px;
 }
 
 .strength-meter {
   height: 2rem;
   width: 90%;
-  border: 3px solid #99621e;
+  border: 3px solid #297fc5;
   border-radius: 1rem;
   margin: auto;
   position: relative;
@@ -61,7 +61,7 @@ button {
   left: 0;
   height: 100%;
   width: calc(1% * var(--strength, 0));
-  background-color: #cc8328;
+  background-color: #57e217;
   border-radius: 1rem;
   transition: width 200ms;
 }
@@ -70,9 +70,9 @@ button {
   margin-top: 35px;
   width: 70%;
   padding: 0.25rem 0.75rem;
-  background-color: #dca37f;
+  background-color: #ffffff;
   color: rgb(0, 0, 0) !important;
-  border: 1px solid #cc8328;
+  border: 1px solid #000000;
   outline: none;
   align-items: center;
   border-radius: 0.3rem;
@@ -102,10 +102,10 @@ button {
 }
 
 .password-input:focus {
-  border-color: greenyellow;
+  border-color: rgb(228, 62, 20);
 }
 ::placeholder {
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 1;
 }
 

@@ -1,6 +1,7 @@
 const strengthMeter = document.getElementById('strength-meter') ;
 const passwordInput = document.getElementById('password-input') ;
 const reasonsContainer = document.getElementById('problems') ;
+
 passwordInput.addEventListener('input', updateStrengthMeter) ;
 updateStrengthMeter() ;
 function updateStrengthMeter() {
@@ -46,7 +47,6 @@ function calculatePasswordStrength(password)  {
     weakness.push(repeatCharacterWeakness (password) ) ;
     return weakness ;
 }
-
 
 
 function lengthWeakness(password) {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
 * ::before,
 *::after,
 * {
@@ -7,9 +9,9 @@
   --background: #e5ffb3;
   --background-accent: #dbf8a3;
   --background-accent-2: #bde66e;
-  --light: #92de34;
+  --light: #000000;
   --dark: #69bc22;
-  --text: #025600;
+  --text: #ffffff;
 }
 .buttons {
   display: flex;
@@ -17,10 +19,14 @@
   justify-content: space-around;
 }
 body {
-  background-color: #f3ffb6;
-  color: #d38b5d;
+  background-color: #ffffff;
+  color: #fafafa;
   text-align: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  background: url(https://bnetcmsus-a.akamaihd.net/cms/blog_header/2i/2IAZ90APC59A1603927809318.jpg);
+  background-size: cover;
 }
 button {
   display: block;
@@ -35,14 +41,14 @@ button {
   font-weight: 600;
   color: var(--text);
   background-size: 100% 100%;
-  box-shadow: 0 0 0 7px var(--light) inset;
+  box-shadow: 0 0 0 1px var(--text) inset;
   margin-bottom: 15px;
 }
 
 .strength-meter {
   height: 2rem;
-  width: 90%;
-  border: 3px solid #99621e;
+  width: 60%;
+  border: 3px solid #ffffff;
   border-radius: 1rem;
   margin: auto;
   position: relative;
@@ -52,10 +58,17 @@ button {
 .strength-meter::before {
   content: "";
   position: absolute;
-  left: 0;
+  display: flex;
+  min-width: 2rem;
+  max-width: calc(100% -1em);
+  left: 0em;
+  bottom: .2em;
+  top: 0em;
   height: 100%;
   width: calc(1% * var(--strength, 0));
-  background-color: #cc8328;
+  background-color: #57e217;
+  border-radius: 1em;
+  padding: 0.5em;
   border-radius: 1rem;
   transition: width 200ms;
 }
@@ -64,25 +77,42 @@ button {
   margin-top: 35px;
   width: 70%;
   padding: 0.25rem 0.75rem;
-  background-color: #dca37f;
-  color: white !important;
-  border: 1px solid #cc8328;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid #000000;
   outline: none;
   align-items: center;
   border-radius: 0.3rem;
 }
 
 .problems {
+  align-content: center;
+  width: 600px;
+  height: 370px;
+  border-top:1px solid silver;
+  border-left: 1px solid silver;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(7px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
   text-align: center;
-  color: #e0ae8f;
-  margin-top: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 500px;
+  align-self: right;
+  font-family: "Orbitron",sans-serif;
+  font-size: 21px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 8px;
 }
 
 .password-input:focus {
-  border-color: greenyellow;
+  border-color: rgb(228, 62, 20);
 }
 ::placeholder {
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 1;
 }
 
@@ -144,4 +174,9 @@ label {
 
 a {
   text-decoration: none;
+}
+
+.container .problems:hover .contentBx
+{
+  transform: translateZ(100px) scaleY(1) scale3d(2);
 }

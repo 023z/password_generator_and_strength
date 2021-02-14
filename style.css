@@ -47,8 +47,8 @@ button {
 
 .strength-meter {
   height: 2rem;
-  width: 90%;
-  border: 3px solid #297fc5;
+  width: 60%;
+  border: 3px solid #ffffff;
   border-radius: 1rem;
   margin: auto;
   position: relative;
@@ -58,10 +58,17 @@ button {
 .strength-meter::before {
   content: "";
   position: absolute;
-  left: 0;
+  display: flex;
+  min-width: 2rem;
+  max-width: calc(100% -1em);
+  left: 0em;
+  bottom: .2em;
+  top: 0em;
   height: 100%;
   width: calc(1% * var(--strength, 0));
   background-color: #57e217;
+  border-radius: 1em;
+  padding: 0.5em;
   border-radius: 1rem;
   transition: width 200ms;
 }

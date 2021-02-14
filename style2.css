@@ -51,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-shadow: 1px 1px 8px;
 }
 .form {
   display: grid;

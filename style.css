@@ -168,3 +168,8 @@ label {
 a {
   text-decoration: none;
 }
+
+.container .problems:hover .contentBx
+{
+  transform: translateZ(100px) scaleY(1) scale3d(2);
+}

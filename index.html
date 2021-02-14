@@ -19,7 +19,13 @@
     <input class="password-input" id="password-input" type="text" autofocus  aria-laballedby="Password" placeholder="Enter Password"> 
     <input type="checkbox" onclick="passwordDisplayHandler()" checked>Show Password
     <div class="problems" id="problems">
-        
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".problems"), 
+    {
+		max: 25,
+		speed: 400
+	});</script>
 </body>
 </html>
